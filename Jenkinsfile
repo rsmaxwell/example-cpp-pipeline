@@ -19,9 +19,6 @@ pipeline {
             ])
           }
         }
-        sh('pwd')
-        sh('ls -al')
-        sh('ls -al project')
         sh('./project/scripts/prepare.sh')
       }
     }
@@ -57,10 +54,6 @@ pipeline {
       steps {
         container('maven') {
           echo 'deploying the application'
-          sh('pwd')
-          sh('ls -al')
-          sh('ls -al ~')
-          sh('ls -al ~/.m2')
           sh('./project/scripts/deploy.sh')
         }
       }
