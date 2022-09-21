@@ -25,7 +25,7 @@ pipeline {
 
     stage('build') {
       steps {
-        container('c') {
+        container('gcc') {
           dir('project') {
             echo 'building the application'
             sh('./scripts/build.sh')

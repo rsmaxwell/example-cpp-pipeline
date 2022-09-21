@@ -10,7 +10,7 @@ spec:
     command:
     - cat
     tty: true
-  - name: c
+  - name: gcc
     image: gcc:latest
     command:
     - cat
