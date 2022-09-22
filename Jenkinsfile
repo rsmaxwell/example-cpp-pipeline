@@ -28,7 +28,7 @@ pipeline {
 
     stage('build') {
       steps {
-        container('go') {
+        container('golang') {
           dir('project') {
             echo 'building the application'
             sh('./scripts/build.sh')
