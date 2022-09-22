@@ -38,4 +38,5 @@ spec:
       secretName: maven-settings
       optional: false
   - name: golang-vol
-    emptyDir: {}
+    persistentVolumeClaim:
+      claimName: golang-pvc
