@@ -10,8 +10,8 @@ spec:
     command:
     - cat
     tty: true
-  - name: golang
-    image: golang:latest
+  - name: cpp
+    image: cpp:latest
     command:
     - cat
     tty: true
@@ -37,6 +37,3 @@ spec:
     secret:
       secretName: maven-settings
       optional: false
-  - name: golang-vol
-    persistentVolumeClaim:
-      claimName: golang-pvc
