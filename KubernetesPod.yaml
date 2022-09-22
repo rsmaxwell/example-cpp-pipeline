@@ -15,9 +15,6 @@ spec:
     command:
     - cat
     tty: true
-    volumeMounts:
-    - mountPath: /go
-      name: golang-vol
   - name: maven
     image: maven:alpine
     command:
