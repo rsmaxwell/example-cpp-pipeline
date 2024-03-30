@@ -13,13 +13,13 @@ spec:
     tty: true
 
   - name: gcc
-    image: gcc:latest
+    image: gcc:11
     command:
     - cat
     tty: true
 
   - name: golang
-    image: golang:latest
+    image: golang:bookworm
     command:
     - cat
     tty: true
